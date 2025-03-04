@@ -1,0 +1,23 @@
+Android (place in Platforms/Android/Resources/mipmap-*):
+- mipmap-hdpi: 72x72
+- mipmap-mdpi: 48x48
+- mipmap-xhdpi: 96x96
+- mipmap-xxhdpi: 144x144
+- mipmap-xxxhdpi: 192x192
+
+iOS (place in Platforms/iOS/Resources/Assets.xcassets/AppIcon.appiconset):
+- iPhone Notification: 20x20 (@2x, @3x)
+- iPhone Settings: 29x29 (@2x, @3x)
+- iPhone Spotlight: 40x40 (@2x, @3x)
+- iPhone App: 60x60 (@2x, @3x)
+- iPad Settings: 29x29 (@1x, @2x)
+- iPad Notification: 20x20 (@1x, @2x)
+- iPad Spotlight: 40x40 (@1x, @2x)
+- iPad App: 76x76 (@1x, @2x)
+- App Store: 1024x1024
+
+Windows (place in Platforms/Windows/Package.appxmanifest):
+- Square44x44Logo
+- Square71x71Logo
+- Square150x150Logo
+- Square310x310Logo 

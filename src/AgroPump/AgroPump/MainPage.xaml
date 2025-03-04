@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgroPump.MainPage"
+             BackgroundColor="{StaticResource Gray50}">
+
+    <Grid RowDefinitions="56,*,64">
+        <!-- Header -->
+        <Grid BackgroundColor="{StaticResource Green600}" 
+              Padding="16,12">
+            <HorizontalStackLayout Spacing="8">
+                <Label Text="{StaticResource IconPump}"
+                       Style="{StaticResource NavIconStyle}"
+                       TextColor="{StaticResource White}"
+                       VerticalOptions="Center"/>
+                <Label Text="AgroPump" 
+                       TextColor="{StaticResource White}" 
+                       FontSize="{StaticResource FontSizeXLarge}"
+                       VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <Label Text="{StaticResource IconGear}"
+                   Style="{StaticResource NavIconStyle}"
+                   TextColor="{StaticResource White}"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Main Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="16" Spacing="16">
+                <!-- Locator Card -->
+                <Frame Style="{StaticResource CardFrameStyle}">
+                    <Grid RowDefinitions="192,Auto">
+                        <!-- Placeholder - you can replace with actual image later -->
+                        <Rectangle Fill="{StaticResource Green600}" 
+                                   Opacity="0.1"/>
+                        <Grid Grid.Row="1" 
+                              Padding="16"
+                              ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout>
+                                <Label Text="Fuel Station Locator" 
+                                       Style="{StaticResource CardTitleStyle}"/>
+                                <Label Text="Find nearest stations" 
+                                       Style="{StaticResource CardSubtitleStyle}"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="1"
+                                   Text="{StaticResource IconLocation}"
+                                   Style="{StaticResource NavIconStyle}"
+                                   TextColor="{StaticResource Gray400}"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+
+                <!-- Prices Card -->
+                <Frame Style="{StaticResource CardFrameStyle}">
+                    <Grid RowDefinitions="192,Auto">
+                        <!-- Placeholder - you can replace with actual image later -->
+                        <Rectangle Fill="{StaticResource Green600}" 
+                                   Opacity="0.1"/>
+                        <Grid Grid.Row="1" 
+                              Padding="16"
+                              ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout>
+                                <Label Text="Fuel Prices" 
+                                       Style="{StaticResource CardTitleStyle}"/>
+                                <Label Text="Daily price updates" 
+                                       Style="{StaticResource CardSubtitleStyle}"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="1"
+                                   Text="{StaticResource IconPrice}"
+                                   Style="{StaticResource NavIconStyle}"
+                                   TextColor="{StaticResource Gray400}"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+
+                <!-- Profile Card -->
+                <Frame Style="{StaticResource CardFrameStyle}">
+                    <Grid RowDefinitions="192,Auto">
+                        <!-- Placeholder - you can replace with actual image later -->
+                        <Rectangle Fill="{StaticResource Green600}" 
+                                   Opacity="0.1"/>
+                        <Grid Grid.Row="1" 
+                              Padding="16"
+                              ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout>
+                                <Label Text="Profile" 
+                                       Style="{StaticResource CardTitleStyle}"/>
+                                <Label Text="Manage your account" 
+                                       Style="{StaticResource CardSubtitleStyle}"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="1"
+                                   Text="{StaticResource IconUser}"
+                                   Style="{StaticResource NavIconStyle}"
+                                   TextColor="{StaticResource Gray400}"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <Border Grid.Row="2" 
+                BackgroundColor="{StaticResource White}"
+                Stroke="{StaticResource Gray100}"
+                StrokeThickness="1">
+            <Grid ColumnDefinitions="*,*,*,*"
+                  Padding="16,8">
+                <!-- Home Tab -->
+                <Grid Style="{StaticResource NavButtonStyle}"
+                      RowDefinitions="Auto,Auto">
+                    <Label Text="{StaticResource IconHome}"
+                           Style="{StaticResource NavIconStyle}"
+                           TextColor="{StaticResource Green600}"/>
+                    <Label Grid.Row="1" 
+                           Text="Home"
+                           Style="{StaticResource NavLabelStyle}"
+                           TextColor="{StaticResource Green600}"/>
+                </Grid>
+
+                <!-- Locator Tab -->
+                <Grid Grid.Column="1" 
+                      Style="{StaticResource NavButtonStyle}"
+                      RowDefinitions="Auto,Auto">
+                    <Label Text="{StaticResource IconLocation}"
+                           Style="{StaticResource NavIconStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                    <Label Grid.Row="1" 
+                           Text="Locator"
+                           Style="{StaticResource NavLabelStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                </Grid>
+
+                <!-- Prices Tab -->
+                <Grid Grid.Column="2" 
+                      Style="{StaticResource NavButtonStyle}"
+                      RowDefinitions="Auto,Auto">
+                    <Label Text="{StaticResource IconPrice}"
+                           Style="{StaticResource NavIconStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                    <Label Grid.Row="1" 
+                           Text="Prices"
+                           Style="{StaticResource NavLabelStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                </Grid>
+
+                <!-- Profile Tab -->
+                <Grid Grid.Column="3" 
+                      Style="{StaticResource NavButtonStyle}"
+                      RowDefinitions="Auto,Auto">
+                    <Label Text="{StaticResource IconUser}"
+                           Style="{StaticResource NavIconStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                    <Label Grid.Row="1" 
+                           Text="Profile"
+                           Style="{StaticResource NavLabelStyle}"
+                           TextColor="{StaticResource Gray400}"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+
+</ContentPage>

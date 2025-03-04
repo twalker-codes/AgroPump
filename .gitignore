@@ -398,3 +398,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+src/AgroPump/.idea
+docs
+img/output.png
